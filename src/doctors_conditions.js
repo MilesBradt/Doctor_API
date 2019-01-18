@@ -1,5 +1,3 @@
-
-
 export class DoctorConditions {
   getDoctorsForCondition(symptom) {
     let apiKey = process.env.API_KEY;

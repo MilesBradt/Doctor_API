@@ -11,7 +11,9 @@ $(document).ready(function() {
   doctorSearch.then(function(response) {
     let body = JSON.parse(response);
 
-    console.log(body);
+    for (let i = 0; i < body.data.length; i++) {
+      console.log(body.data[i].profile);
+    }
   });
 
 });
