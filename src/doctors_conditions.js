@@ -1,6 +1,8 @@
+
+
 export class DoctorConditions {
   getDoctorsForCondition(symptom) {
-    let apiKey = process.env.apiKey;
+    let apiKey = process.env.API_KEY;
     let userSymptom = symptom;
     return new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
