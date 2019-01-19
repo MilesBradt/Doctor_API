@@ -19,3 +19,13 @@ _Doesn't give erros if search returns null_
 ## Technologies Used
 
 _Javascript/jQuery with webpack_
+
+## WIP
+
+* _Add support for both fax and landline numbers per office_
+
+* _Return message of search comes up blank_
+
+* _CSS styling_
+
+* _Google map integration with markers based off doctor's address_
