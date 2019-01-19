@@ -10,6 +10,9 @@ _Uses the [BetterDoctor API](https://developer.betterdoctor.com/) to search for 
 
 * _clone repository_
 * _type "npm install" in terminal_
+* _get API key from [BetterDoctor API](https://developer.betterdoctor.com/)_
+* _create .env file in root_
+* _place "API_KEY = '(your API key will go here)'" in .env file_
 * _type "npm run start" in terminal_
 
 ## Known Bugs
