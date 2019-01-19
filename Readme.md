@@ -14,7 +14,7 @@ _Uses the [BetterDoctor API](https://developer.betterdoctor.com/) to search for 
 
 ## Known Bugs
 
-_Doesn't give erros if search returns null_
+_Doesn't give notice if search returns null_
 
 ## Technologies Used
 
