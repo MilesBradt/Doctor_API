@@ -24,7 +24,7 @@ _Javascript/jQuery with webpack_
 
 * _Add support for both fax and landline numbers per office_
 
-* _Return message of search comes up blank_
+* _Return message if search comes up blank_
 
 * _CSS styling_
 
