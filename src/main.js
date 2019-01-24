@@ -16,16 +16,14 @@ $(document).ready(function() {
     doctorSearch.then(function(response) {
       let body = JSON.parse(response);
 
-      for (let i = 0; i < body.data.length; i++) {
-        // phones.forEach(phone) {
-        //   console.log(phone.number, phone.type)
-        // }
+      if(body.data.length === 0) {
+        $("#output").text("It appears your search results came up with nothing, make sure your spelling is correct or you entered a valid symptom")
+      }
 
-        console.log(body.data[i]);
+      for (let i = 0; i < body.data.length; i++) {
+
         $("#output").append("<li>" + "Name: " + body.data[i].profile.first_name + " " + body.data[i].profile.last_name + "<br>" + "Address: " + body.data[i].practices[0].name + " " + body.data[i].practices[0].visit_address.street + " " + body.data[i].practices[0].visit_address.city + ", " + body.data[i].practices[0].visit_address.state + " " + body.data[i].practices[0].visit_address.zip + "<br>" + "Number: " + body.data[i].practices[0].phones[0].number + "<br>" + "Accepting new patients? " + body.data[i].practices[0].accepts_new_patients + "</li>")
 
-
-        console.log(body.data[i].practices[0].name, body.data[i].practices[0].visit_address.city, body.data[i].practices[0].visit_address.state, body.data[i].practices[0].visit_address.street, body.data[i].practices[0].visit_address.street2, body.data[i].practices[0].visit_address.zip, body.data[i].practices[0].phones[0].number, body.data[i].practices[0].phones[0].type, body.data[i].practices[0].accepts_new_patients);
       }
     });
   });
@@ -39,16 +37,14 @@ $(document).ready(function() {
     doctorSearchName.then(function(response) {
       let body = JSON.parse(response);
 
-      for (let i = 0; i < body.data.length; i++) {
-        // phones.forEach(phone) {
-        //   console.log(phone.number, phone.type)
-        // }
+      if(body.data.length === 0) {
+        $("#output").text("It appears your search results came up with nothing, make sure your spelling is correct or you entered a valid name")
+      }
 
-        console.log(body.data[i]);
+      for (let i = 0; i < body.data.length; i++) {
+
         $("#output").append("<li>" + "Name: " + body.data[i].profile.first_name + " " + body.data[i].profile.last_name + "<br>" + "Address: " + body.data[i].practices[0].name + " " + body.data[i].practices[0].visit_address.street + " " + body.data[i].practices[0].visit_address.city + ", " + body.data[i].practices[0].visit_address.state + " " + body.data[i].practices[0].visit_address.zip + "<br>" + "Number: " + body.data[i].practices[0].phones[0].number + "<br>" + "Accepting new patients? " + body.data[i].practices[0].accepts_new_patients + "</li>")
 
-
-        console.log(body.data[i].practices[0].name, body.data[i].practices[0].visit_address.city, body.data[i].practices[0].visit_address.state, body.data[i].practices[0].visit_address.street, body.data[i].practices[0].visit_address.street2, body.data[i].practices[0].visit_address.zip, body.data[i].practices[0].phones[0].number, body.data[i].practices[0].phones[0].type, body.data[i].practices[0].accepts_new_patients);
       }
     });
   });
