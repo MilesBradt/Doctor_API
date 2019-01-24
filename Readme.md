@@ -17,7 +17,7 @@ _Uses the [BetterDoctor API](https://developer.betterdoctor.com/) to search for 
 
 ## Known Bugs
 
-_None to my knowledge
+_None to my knowledge_
 
 ## Technologies Used
 
