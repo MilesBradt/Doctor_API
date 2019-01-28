@@ -15,10 +15,6 @@ _Uses the [BetterDoctor API](https://developer.betterdoctor.com/) to search for 
 * _place "API_KEY = '(your API key will go here)'" in .env file_
 * _type "npm run start" in terminal_
 
-## Known Bugs
-
-_None to my knowledge_
-
 ## Technologies Used
 
 _Javascript/jQuery with webpack_
